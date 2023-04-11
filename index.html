@@ -12,25 +12,48 @@
     </style>
 </head>
 <body>
-  <img src="img/flower.jpg" >
+<div class="left">
 
+    <h1 class="photo_text">koloseki form</h1>
 
-  <div class="container">
-    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</div>
+  <img src="img/flower.jpg" alt="flower on the green background" >
+</div>
+
+  <div class="right">
+    <div class="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla nisl, vestibulum sit amet dolor a, bibendum mattis nulla. Phasellus ac tincidunt sapien.Suspendisse tincidunt metus arcu, et aliquam est condimentum vitae. Nunc vitae fermentum augue. Duis vitae velit enim. Sed consequat sapien in justo condimentum, ac tincidunt massa pretium. Suspendisse id dignissim mauris, eget posuere metus. In hac habitasse platea dictumst.</div>
 
 
     <div class="form">
-        <h1>Form</h1>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <input type="text" placeholder="Message">
-            <button>Submit</button>
+        <h1>Register</h1>
+        <form id="myform">
+            <div class="formFolder">
+                <label for="name">First Name</label>
+                <input type="text" id="name" placeholder="First Name" required>
+
+                <label>Phone Number</label>
+                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" MAXLENGTH="9" placeholder="(+48) 123456789">
+
+
+
+                <label>Password</label>
+                <input type="password" MINLENGTH="4" placeholder="Password">
+            </div>
+
+            <div class="formFolder">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" required>
+
+                <label>E-mail</label>
+                <input type="email" placeholder="example@som.com">
+
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password">
+            </div>
         </form>
     </div>
 
-      <button id="greenButton" >Click me</button>
+      <input type="submit" form="myform" value="Create Account" id="greenButton"/>
+
   </div>
 
 </body>
