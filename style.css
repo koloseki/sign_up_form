@@ -2,9 +2,9 @@ body{
     background-color: #eef0f5;
     margin: 0;
     padding: 0;
-
     display: flex;
     font-family: 'Roboto', sans-serif;
+    zoom: 70%;
 }
 
 .left{
@@ -139,6 +139,7 @@ input:focus{
 
     #greenButton{
         width: 45vw;
+        margin-bottom: 10vh;
     }
     input{
         width: 30vh;
