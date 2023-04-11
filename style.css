@@ -85,6 +85,7 @@ img {
     font-weight: 500;
     cursor: pointer;
     width: 10vw;
+    text-align: center;
 }
 
 #greenButton:hover{
